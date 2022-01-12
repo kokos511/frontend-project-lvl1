@@ -1,2 +1,6 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/kokos511/frontend-project-lvl1/workflows/hexlet-check/badge.svg)](https://github.com/kokos511/frontend-project-lvl1/actions)
+
+[![Maintainability](https://api.codeclimate.com/v1/badges/0c6d0d72f3c82058306c/maintainability)](https://codeclimate.com/github/kokos511/frontend-project-lvl1/maintainability)
+
+[![eslint](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml)
