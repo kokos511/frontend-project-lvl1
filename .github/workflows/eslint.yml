@@ -5,5 +5,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        working-directory: cd ../../
+        working-directory: cd ./
         run: make lint
