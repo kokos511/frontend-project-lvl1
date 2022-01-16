@@ -4,6 +4,6 @@ jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - name: my-step
-        working-directory: /home/natalya/frontend-project-lvl1
         run: make lint
