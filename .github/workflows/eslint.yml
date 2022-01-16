@@ -1,9 +1,20 @@
 name: eslint
 on: push
 jobs:
-  my-job:
+  build:
     runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node: [ '16' ]
+    name: Node ${{ matrix.node }} sample
     steps:
-      - uses: actions/checkout@v2
-      - name: my-step
+      - name: checkout project
+        uses: actions/checkout@v2
+      - name: setup node
+        uses: actions/setup-node@v2
+        with:
+          node-version: ${{ matrix.node }}
+      - name: make install
+        run: make install
+      - name: run Eslint
         run: make lint
