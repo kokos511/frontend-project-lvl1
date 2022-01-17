@@ -4,3 +4,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0c6d0d72f3c82058306c/maintainability)](https://codeclimate.com/github/kokos511/frontend-project-lvl1/maintainability)
 
 [![eslint](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml)
+
+[![asciicast](https://asciinema.org/a/re8NksnmpmFEo8JYso45gxp9y.svg)](https://asciinema.org/a/re8NksnmpmFEo8JYso45gxp9y)
