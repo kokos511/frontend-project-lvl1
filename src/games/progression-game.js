@@ -1,8 +1,6 @@
 import greeting from '../cli.js';
 import toGame from '../index.js';
 
-const name = greeting();
-
 const getRundomNum = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
 let correctAnswer;
@@ -30,6 +28,7 @@ const getQuestion = () => {
 const getCorrectAnswer = () => correctAnswer;
 
 const toGameProgression = () => {
+  const name = greeting();
   console.log('What number is missing in the progression?');
   toGame(name, getQuestion, getCorrectAnswer);
 };

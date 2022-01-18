@@ -1,8 +1,6 @@
 import greeting from '../cli.js';
 import toGame from '../index.js';
 
-const name = greeting();
-
 const getQuestion = () => Math.round(Math.random() * 100);
 
 const getCorrectAnswer = (num) => {
@@ -18,6 +16,7 @@ const getCorrectAnswer = (num) => {
 };
 
 const toGamePrime = () => {
+  const name = greeting();
   console.log('Answer "yes" if given number is prime. Otherwise answer "no"');
   toGame(name, getQuestion, getCorrectAnswer);
 };

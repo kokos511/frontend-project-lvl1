@@ -1,8 +1,6 @@
 import greeting from '../cli.js';
 import toGame from '../index.js';
 
-const name = greeting();
-
 const getQuestion = () => {
   const random = Math.floor(Math.random() * 3);
   const num1 = Math.round(Math.random() * 100);
@@ -37,6 +35,7 @@ const getCorrectAnswer = (str) => {
 };
 
 const toGameCalc = () => {
+  const name = greeting();
   console.log('What is the result of the expression?');
   toGame(name, getQuestion, getCorrectAnswer);
 };

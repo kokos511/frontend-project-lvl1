@@ -1,8 +1,6 @@
 import greeting from '../cli.js';
 import toGame from '../index.js';
 
-const name = greeting();
-
 const getQuestion = () => {
   const num1 = Math.round(Math.random() * 100);
   const num2 = Math.round(Math.random() * 100);
@@ -40,6 +38,7 @@ const getCorrectAnswer = (str) => {
 };
 
 const toGameGcd = () => {
+  const name = greeting();
   console.log('Find the greatest common divisor of given numbers.');
   toGame(name, getQuestion, getCorrectAnswer);
 };
