@@ -1,5 +1,5 @@
-import greeting from './cli.js';
-import toGame from './game-engine.js';
+import greeting from '../cli.js';
+import toGame from '../index.js';
 
 const name = greeting();
 
