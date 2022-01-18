@@ -6,3 +6,5 @@
 [![eslint](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml/badge.svg)](https://github.com/kokos511/frontend-project-lvl1/actions/workflows/eslint.yml)
 
 [![asciicast](https://asciinema.org/a/re8NksnmpmFEo8JYso45gxp9y.svg)](https://asciinema.org/a/re8NksnmpmFEo8JYso45gxp9y)
+
+[![asciicast](https://asciinema.org/a/day0mde1rbTKeJkOO9dZ5B76l.svg)](https://asciinema.org/a/day0mde1rbTKeJkOO9dZ5B76l)
