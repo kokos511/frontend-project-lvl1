@@ -21,23 +21,24 @@ const getQuestion = () => {
     default:
   }
   return question;
-}
+};
+
 const getCorrectAnswer = (str) => {
   const array = str.split(' ');
   let correctAnswer;
   if (array[1] === '+') {
     correctAnswer = Number(array[0]) + Number(array[2]);
   } else if (array[1] === '-') {
-    correctAnswer = Number(array[0]) + Number(array[2]);
+    correctAnswer = Number(array[0]) - Number(array[2]);
   } else if (array[1] === '*') {
     correctAnswer = Number(array[0]) * Number(array[2]);
   }
-  return correctAnswer;
+  return correctAnswer.toString();
 };
 
 const toGameCalc = () => {
-    console.log('What is the result of the expression?');
-    toGame(name, getQuestion, getCorrectAnswer);
+  console.log('What is the result of the expression?');
+  toGame(name, getQuestion, getCorrectAnswer);
 };
 
 export default toGameCalc;
