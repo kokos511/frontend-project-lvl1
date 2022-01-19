@@ -17,7 +17,7 @@ const toGame = (rules, getQuestion, getCorrectAnswer) => {
     console.log('Correct!');
     count += 1;
   }
-  console.log(`Congratulations, ${name}`);
+  console.log(`Congratulations, ${name}!`);
 };
 
 export default toGame;
