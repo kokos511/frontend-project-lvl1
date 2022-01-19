@@ -1,4 +1,3 @@
-import greeting from '../cli.js';
 import toGame from '../index.js';
 
 const getQuestion = () => {
@@ -23,10 +22,10 @@ const getCorrectAnswer = (str) => {
   return correctAnswer;
 };
 
+const rules = 'Find the greatest common divisor of given numbers.';
+
 const toGameGcd = () => {
-  const name = greeting();
-  console.log('Find the greatest common divisor of given numbers.');
-  toGame(name, getQuestion, getCorrectAnswer);
+  toGame(rules, getQuestion, getCorrectAnswer);
 };
 
 export default toGameGcd;

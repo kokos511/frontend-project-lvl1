@@ -1,4 +1,3 @@
-import greeting from '../cli.js';
 import toGame from '../index.js';
 
 const getQuestion = () => {
@@ -34,10 +33,10 @@ const getCorrectAnswer = (str) => {
   return correctAnswer.toString();
 };
 
+const rules = 'What is the result of the expression?';
+
 const toGameCalc = () => {
-  const name = greeting();
-  console.log('What is the result of the expression?');
-  toGame(name, getQuestion, getCorrectAnswer);
+  toGame(rules, getQuestion, getCorrectAnswer);
 };
 
 export default toGameCalc;

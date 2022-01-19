@@ -1,6 +1,9 @@
 import readlineSync from 'readline-sync';
+import greeting from './cli.js';
 
-const toGame = (name, getQuestion, getCorrectAnswer) => {
+const toGame = (rules, getQuestion, getCorrectAnswer) => {
+  const name = greeting();
+  console.log(rules);
   let count = 0;
   while (count < 3) {
     const question = getQuestion();
