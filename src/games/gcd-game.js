@@ -10,30 +10,16 @@ const getQuestion = () => {
 
 const getCorrectAnswer = (str) => {
   const array = str.split(' ');
-  array.sort((a, b) => a - b);
-  let correctAnswer;
-  const num1 = array[0];
-  const num2 = array[1];
-  if (num1 === 1) {
-    correctAnswer = '1';
-  }
-  if (num2 % num1 === 0) {
-    correctAnswer = `${num1}`;
-  } else if (num1 % 2 === 0) {
-    for (let i = num1 / 2; i >= 1; i -= 1) {
-      if (num2 % i === 0 && num1 % i === 0) {
-        correctAnswer = `${i}`;
-        break;
-      }
-    }
-  } else {
-    for (let i = num1; i >= 1; i -= 1) {
-      if (num2 % i === 0 && num1 % i === 0) {
-        correctAnswer = `${i}`;
-        break;
-      }
+  let num1 = array[0];
+  let num2 = array[1];
+  while (num1 !== 0 && num2 !== 0) {
+    if (num1 > num2) {
+      num1 = num1 % num2;
+    } else {
+      num2 = num2 % num1;
     }
   }
+  const correctAnswer = (num1 + num2).toString();
   return correctAnswer;
 };
 
