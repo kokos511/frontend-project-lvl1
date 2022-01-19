@@ -9,8 +9,8 @@ const getQuestion = () => {
 
 const getCorrectAnswer = (str) => {
   const array = str.split(' ');
-  let num1 = array[0];
-  let num2 = array[1];
+  let num1 = Number(array[0]);
+  let num2 = Number(array[1]);
   while (num1 !== 0 && num2 !== 0) {
     if (num1 > num2) {
       num1 %= num2;
