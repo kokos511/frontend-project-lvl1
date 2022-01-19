@@ -1,8 +1,8 @@
 import toGame from '../index.js';
 
 const getQuestion = () => {
-  const num1 = Math.round(Math.random() * 100);
-  const num2 = Math.round(Math.random() * 100);
+  const num1 = Math.floor(Math.random() * 100 - 1) + 1;
+  const num2 = Math.floor(Math.random() * 100 - 1) + 1;
   const question = `${num1} ${num2}`;
   return question;
 };
