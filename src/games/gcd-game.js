@@ -18,8 +18,8 @@ const getCorrectAnswer = (str) => {
       num2 %= num1;
     }
   }
-  const correctAnswer = (num1 + num2).toString();
-  return correctAnswer;
+  const correctAnswer = num1 + num2;
+  return correctAnswer.toString();
 };
 
 const rules = 'Find the greatest common divisor of given numbers.';
