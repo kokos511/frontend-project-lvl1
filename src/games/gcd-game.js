@@ -14,9 +14,9 @@ const getCorrectAnswer = (str) => {
   let num2 = array[1];
   while (num1 !== 0 && num2 !== 0) {
     if (num1 > num2) {
-      num1 = num1 % num2;
+      num1 %= num2;
     } else {
-      num2 = num2 % num1;
+      num2 %= num1;
     }
   }
   const correctAnswer = (num1 + num2).toString();
